@@ -1,0 +1,4 @@
+avast-demo:
+  uri-template:
+    validation:
+      get: http://localhost:8080/validation/{requestId}
