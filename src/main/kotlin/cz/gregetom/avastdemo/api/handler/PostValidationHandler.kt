@@ -18,6 +18,7 @@ import java.net.URI
 @Component
 class PostValidationHandler(
         private val validationRequestService: ValidationRequestService,
+        // hateoas?
         @Value("\${avast-demo.uri-template.validation.get}") private val validationGetUriTemplate: String
 ) : RequestHandlerWithBodyParent<UrlValidationRequestListTO>(UrlValidationRequestListTO::class) {
 
